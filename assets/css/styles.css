@@ -1,0 +1,422 @@
+
+/*----Declaring color variables for light theme*/
+:root {
+  --background: #ffffff;
+  --primary-color: #757575;
+  --primary-color-dark: #00523e;
+  --accent-color: #f5f5f5;
+  --primary-text: #333333;
+  --secondary-text: #757575;
+  --card: #f5f5f5;
+  --fat-color: #ff6666;
+  --carbs-color: #ffc107;
+  --protein-color: #66bb6a;
+  --remove: #ff6f6f;
+  --highlight-color:#82d586;
+}
+
+/*----Declaring color variables for dark theme*/
+.dark-mode {
+  --background: #222222;
+  --primary-color: #999999;
+  --primary-color-dark: #66bb6a;
+  --accent-color: black;
+  --primary-text: #ffffff;
+  --secondary-text: #999999;
+  --card: #333333;
+  --fat-color: #ff4d4d;
+  --carbs-color: #ffeb3b;
+  --protein-color: #8bc34a;
+  --remove: #ff9595;
+  --highlight-color:black;
+}
+
+/* accessing body attributes */
+body {
+  background-color: var(--background);                
+  color: var(--primary-text);
+  font-family: ‘Montserrat’, sans-serif;
+}
+
+/* navigation class */
+.navbar {       
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
+/* accessing text at navigation bar */
+span.navbar-text {
+  font-size: 0.75rem;
+  color: var(--primary-color);
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* changing the svg in navigation based on theme color */
+nav svg {
+  fill: var(--primary-color);
+}
+
+/* hover effect for the navigation links */
+nav .nav-link:hover {
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  -webkit-text-decoration-color: var(--primary-color);
+  text-decoration-color: var(--primary-color);
+  text-decoration-thickness: 5px;
+}
+/* chosen link effect */
+.nav-link.active {
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  -webkit-text-decoration-color: var(--primary-color);
+  text-decoration-color: var(--primary-color);
+  text-decoration-thickness: 5px;
+}
+
+/* Theme switch toggle Begining*/
+.theme-switch {
+  display: inline-block;
+  height: 1.625rem;
+  position: relative;
+  width: 2.75rem;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+/* toggle slider properties */
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* slider box properties */
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 1.15rem;
+  left: 4px;
+  position: absolute;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.4s;
+  transition: 1s;
+  width: 1.15rem;
+}
+
+/* background color of toggle */
+.theme-switch input:checked + .slider {
+  background-color: #ccc;
+}
+
+/* transform animation property */
+.theme-switch input:checked + .slider:before {
+  -webkit-transform: translateX(1.1rem);
+  -ms-transform: translateX(1.1rem);
+  transform: translateX(1.1rem);
+}
+
+/* radius of the toggle */
+.slider.round {
+  border-radius: 2px;
+}
+
+/* radius of the slider in toggle */
+.slider.round:before {
+  border-radius: 2%;
+}
+/* end of theme switch toggle */
+
+/*footer properties*/
+footer {
+  background-color: var(--accent-color);
+}
+
+/* our details */
+.footer-sponsor a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* hover effect for our details */
+.footer-sponsor a:hover {
+  color: var(--primary-color-dark);
+}
+
+/* external link icon properties */
+.social-links i {
+  color: white;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+  width: 1.85rem;
+  height: 1.85rem;
+  padding: 0.7rem 0;
+  text-align: center;
+  line-height: 7px;
+}
+/* external link icon hover effect properties */
+.social-links i:hover {
+  background-color: var(--primary-color-dark);
+  -webkit-transition: background-color 0.35s ease-in-out;
+  -o-transition: background-color 0.35s ease-in-out;
+  transition: background-color 0.35s ease-in-out;
+}
+
+/*setting color to various html elements */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--primary-color);
+}
+
+.text-muted {
+  color: var(--secondary-text) !important;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+span.icon-text {
+  font-size: 0.75rem;
+  color: var(--secondary-text);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: transparent;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: var(--primary-color-dark);
+  border-color: transparent;
+}
+
+.btn-secondary {
+  background-color: white;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.btn-reset {
+  border-color: var(--secondary-text);
+  color: var(--secondary-text);
+}
+
+.btn-reset:hover {
+  background-color: var(--secondary-text);
+  border-color: transparent;
+  color: white;
+}
+
+.caloric-breakdown-container {
+  background-color: var(--primary-color);
+}
+
+.fat-color {
+  color: var(--fat-color);
+}
+.carbs-color {
+  color: var(--carbs-color);
+}
+.protein-color {
+  color: var(--protein-color);
+}
+
+/* properties of the items on the cart selected from the recipe page  */
+.section-card-wrapper {
+  background-color: var(--card);
+  margin: 1rem 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  -webkit-box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px,
+    rgb(0 0 0 / 30%) 0px 8px 16px -8px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px,
+    rgb(0 0 0 / 30%) 0px 8px 16px -8px;
+}
+
+.meal-card-data a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: border 0.15s ease-in-out;
+  -o-transition: border 0.15s ease-in-out;
+  transition: border 0.15s ease-in-out;
+}
+/* container properties for dishes */
+.card {
+  background-color: var(--card);
+}
+/* hover effect of container properties for dishes */
+.card-body:hover {
+  border: solid 2px var(--primary-color);
+}
+/* text decoration of the card title when hovering */
+.card-body:hover .card-title {
+  text-decoration: underline;
+  -webkit-text-decoration-color: var(--primary-color);
+  text-decoration-color: var(--primary-color);
+}
+
+/*properties for the index page */
+.hero-wrapper {
+  background: url("../img/index-background.jpg") center center / cover no-repeat;
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+/* light theme for the banner*/
+.hero-wrapper:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.7;
+  z-index: -1;
+}
+/* dark theme for banner */
+body.dark-mode section.hero-wrapper:before {
+  background-color: #5b5b5b;
+  opacity: 0.6;
+}
+
+.hero-heading {
+  color: var(--primary-color-dark);
+  font-family: Merienda, sans-serif;
+  font-size: 3rem;
+}
+
+/*mobile view for the grocery page*/
+@media (min-width: 768px) {
+  .section-card-wrapper.grocery {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.fa-edit,
+.fa-trash-alt {
+  color: var(--secondary-text);
+  font-weight: 200;
+}
+
+.fa-trash-alt:hover {
+  color: var(--remove);
+}
+
+/*----diet and intolerance selection*/
+form input[type="radio"],
+form input[type="checkbox"] {
+  margin: 0;
+  padding: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+/* highlighter for the intolerance icons */
+form input:checked + label {
+  background-color: var(--highlight-color);
+  border-radius: 10px;
+}
+
+/*css properties for the recipe details page*/
+ul > li {
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+
+hr {
+  border-top: 1px solid var(--primary-color);
+  width: 90%;
+}
+
+/* properties for the add or remove icon */
+button.add-remove-item {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0px solid transparent;
+  padding: 0;
+}
+
+i.bi-plus-circle {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+/* hover properties for the add or remove icon */
+i.bi-plus-circle:hover {
+  color: white;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+
+i.bi-dash-circle {
+  color: var(--remove);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+i.bi-dash-circle:hover {
+  color: white;
+  border-radius: 50%;
+  background-color: var(--remove);
+}
+/* mobile view property */
+@media (min-width: 768px) {
+  .recipe-ingredients,
+  .recipe-instructions {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .recipe-img {
+    width: 50%!important;
+  }
+}
+/* tablet view property */
+@media (min-width: 992px) {
+  .recipe-nutrient-breakdown {
+    border-left: 1px solid var(--primary-color);
+  }
+
+  .recipe-instructions {
+    width: 80%;
+  }
+}

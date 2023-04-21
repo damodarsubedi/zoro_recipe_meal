@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <link rel="icon"type="image/png" href="assets/img/favicon.png"/>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+      <link rel="stylesheet" href="assets/css/styles.css" />
+        <title>Zoro Recipe & Meal</title>
+    </head>
+    <body class="vh-100 m-0 p-0 d-flex flex-column">
+        <header>
+            <nav class="navbar justify-content-around py-0">
+                <a class="navbar-brand" href="index.html">
+                    <img
+                        src="assets/img/logo.png"
+                        alt="Zoro Recipe & Meal logo"
+                        width="125"
+                        height="60"/>
+                </a>
+                <div>
+                    <ul class="navbar-nav flex-row align-items-center mb-lg-0">
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="recipe-generator.html">
+                                <svg
+                                    id="Line-Expand"
+                                    enable-background="new 0 0 64 64"
+                                    height="40"
+                                    viewbox="0 0 64 64"
+                                    width="40"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m59.091 50h-56.091c-.552 0-1 .448-1 1v4c0 3.86 3.14 7 7 7h30c3.86 0 7-3.14 7-7v-3h3.13c.416 1.756 1.891 3.097 3.768 3.268l5.93.539c.087.008.175.012.262.012.722 0 1.425-.27 1.962-.76.602-.551.948-1.334.948-2.15 0-1.604-1.305-2.909-2.909-2.909zm-15.091 5c0 2.757-2.243 5-5 5h-30c-2.757 0-5-2.243-5-5v-3h40zm15.704-1.419c-.19.174-.435.26-.695.233l-5.93-.539c-.829-.075-1.514-.575-1.852-1.275h7.864c.501 0 .909.408.909.909 0 .259-.105.498-.296.672z"/>
+                                    <path
+                                        d="m11 16c.792 0 1.471-.12 2.049-.309l-.998 2.992c-.102.305-.05.64.138.901.188.262.49.416.811.416h10c.321 0 .623-.154.811-.416.188-.261.239-.596.138-.901l-.998-2.992c.578.189 1.257.309 2.049.309 2.405 0 5-2.294 5-6 0-3.853-3.755-8-12-8s-12 4.147-12 8c0 3.706 2.595 6 5 6zm7-12c7.91 0 10 3.925 10 6 0 2.471-1.557 4-3 4-2.298 0-3.08-1.401-3.105-1.447-.235-.47-.792-.678-1.277-.477s-.732.742-.566 1.24l1.561 4.684h-7.226l1.562-4.684c.164-.492-.08-1.021-.556-1.227-.476-.207-1.035-.006-1.281.45-.032.06-.814 1.461-3.112 1.461-1.443 0-3-1.529-3-4 0-2.075 2.09-6 10-6z"/>
+                                    <path
+                                        d="m32.586 30.099-4.243 4.244c-1.511 1.511-2.343 3.52-2.343 5.657s.832 4.146 2.343 5.657 3.52 2.343 5.657 2.343 4.146-.832 5.657-2.343l9.899-9.899c3.899-3.899 3.899-10.243 0-14.142s-10.244-3.898-14.142 0c-2.235 2.234-3.271 5.371-2.828 8.483zm2.054.149c-.52-2.629.298-5.328 2.188-7.218 3.12-3.119 8.194-3.119 11.314 0 3.119 3.119 3.119 8.195 0 11.314l-9.899 9.899c-1.134 1.133-2.64 1.757-4.243 1.757s-3.109-.624-4.243-1.757-1.757-2.64-1.757-4.243.624-3.109 1.757-4.243l4.608-4.609c.237-.235.34-.573.275-.9z"/>
+                                    <path
+                                        d="m43.192 29.565c.801 0 1.555-.312 2.121-.878.567-.567.879-1.32.879-2.122s-.312-1.555-.878-2.121 0 0 0 0c-1.133-1.133-3.109-1.133-4.242 0-.567.567-.879 1.32-.879 2.122s.312 1.555.878 2.121c.567.566 1.32.878 2.121.878zm-.706-3.707c.188-.189.439-.293.707-.293s.518.104.707.293c.189.188.293.439.293.707s-.104.518-.293.707c-.377.378-1.036.378-1.414 0-.189-.188-.293-.439-.293-.707s.103-.518.293-.707z"/>
+                                    <path d="m46 4v-2c-5.514 0-10 4.486-10 10h2c0-4.411 3.589-8 8-8z"/>
+                                    <path d="m7 23h2c0-3.309-2.691-6-6-6v2c2.206 0 4 1.794 4 4z"/>
+                                    <path d="m26 26h2c0-2.757 2.243-5 5-5v-2c-3.86 0-7 3.14-7 7z"/>
+                                    <path d="m48 2h2v2h-2z"/>
+                                    <path d="m42 46h2v2h-2z"/>
+                                    <path
+                                        d="m3.464 43.878c.944.945 2.2 1.465 3.536 1.465s2.591-.52 3.536-1.465c.203-.203.388-.431.562-.689.973-.108 1.872-.509 2.624-1.136l3.82 4.587c.18.216.442.346.723.359.015.001.03.001.045.001.265 0 .519-.105.707-.293l5.66-5.66c.199-.199.305-.472.292-.752-.013-.281-.143-.543-.358-.723l-4.584-3.825c.625-.752 1.026-1.65 1.132-2.62.259-.173.487-.359.69-.562 1.95-1.949 1.95-5.122 0-7.071-.944-.945-2.2-1.465-3.536-1.465-1.024 0-2.002.306-2.828.875-.826-.569-1.804-.875-2.829-.875-1.335 0-2.591.52-3.535 1.464-.202.202-.388.43-.562.69-1.124.124-2.164.621-2.974 1.432-.811.811-1.308 1.851-1.432 2.974-.26.173-.488.359-.69.562-1.729 1.728-1.924 4.417-.588 6.364-1.335 1.946-1.139 4.635.589 6.363zm14.913.641-3.382-4.062c.443-.897.617-1.918.475-2.927l.03-.03c1.013.143 2.036-.033 2.934-.478l4.056 3.385zm-13.499-7.711c-1.169-1.17-1.169-3.073 0-4.243.184-.184.412-.346.717-.509.327-.175.531-.517.528-.888-.004-.809.307-1.568.877-2.139.566-.565 1.318-.876 2.122-.876h.023c.369 0 .708-.203.882-.528.163-.305.325-.532.509-.716 1.134-1.134 3.109-1.134 4.243 0 .375.375 1.039.375 1.414 0 1.134-1.134 3.109-1.134 4.243 0 1.169 1.17 1.169 3.073 0 4.243-.185.185-.412.346-.715.508-.328.175-.532.517-.53.889.005.81-.306 1.569-.876 2.139-.756.755-1.839 1.038-2.888.762-.346-.091-.711.008-.962.259l-.785.784c-.252.252-.351.619-.26.963.278 1.053-.007 2.132-.762 2.888-.566.565-1.318.876-2.122.876-.008 0-.016-.001-.023 0-.369 0-.708.203-.882.529-.162.303-.323.531-.508.715-1.17 1.17-3.073 1.17-4.243 0-1.169-1.17-1.169-3.073 0-4.243.389-.39.389-1.023-.002-1.413z"/>
+                                </svg>
+                                <span class="navbar-text d-block">Recipes</span>
+                            </a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link active" href="grocery.html">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    id="outline"
+                                    viewbox="0 0 512 512"
+                                    width="40"
+                                    height="40">
+                                    <path
+                                        d="M136,456a24.027,24.027,0,0,0,24-24V336a24,24,0,0,0-48,0v96A24.027,24.027,0,0,0,136,456Zm-8-120a8,8,0,0,1,16,0v96a8,8,0,0,1-16,0Z"/>
+                                    <path
+                                        d="M216,456a24.027,24.027,0,0,0,24-24V336a24,24,0,0,0-48,0v96A24.027,24.027,0,0,0,216,456Zm-8-120a8,8,0,0,1,16,0v96a8,8,0,0,1-16,0Z"/>
+                                    <path
+                                        d="M296,456a24.027,24.027,0,0,0,24-24V336a24,24,0,0,0-48,0v96A24.027,24.027,0,0,0,296,456Zm-8-120a8,8,0,0,1,16,0v96a8,8,0,0,1-16,0Z"/>
+                                    <path
+                                        d="M376,456a24.027,24.027,0,0,0,24-24V336a24,24,0,0,0-48,0v96A24.027,24.027,0,0,0,376,456Zm-8-120a8,8,0,0,1,16,0v96a8,8,0,0,1-16,0Z"/>
+                                    <path
+                                        d="M464,216h0a85.1,85.1,0,0,0-24-59.259V128a8,8,0,0,0-8-8h-4.687l10.343-10.343a30.627,30.627,0,0,0-43.313-43.314L340.686,120H328V96a8,8,0,0,0-1.6-4.8L304,61.333V32a8,8,0,0,0-8-8H192a8,8,0,0,0-8,8V61.333L161.6,91.2l.007.006A7.948,7.948,0,0,0,160,96v28.671a32.649,32.649,0,0,0-16-4.649V88a8,8,0,0,0-8-8H88a8,8,0,0,0-8,8v32.022a32.9,32.9,0,0,0-32,32.845V216a32,32,0,0,0,0,64h1.136L75.155,449.126A45.6,45.6,0,0,0,120.469,488H391.531a45.6,45.6,0,0,0,45.314-38.875L462.864,280H464a32,32,0,0,0,0-64Zm-84.686-48h36.121a86.176,86.176,0,0,0-15.409,48H331.314Zm53.028,4.183A69.159,69.159,0,0,1,448,216h-31.97A70.111,70.111,0,0,1,432.342,172.183ZM424,136v16H395.313l16-16ZM405.656,77.657a14.628,14.628,0,1,1,20.687,20.686l-160,160a14.628,14.628,0,1,1-20.687-20.686ZM280,72,268,88H184l12-16ZM176,104h88v92.686L244.687,216H176V104Zm136,44.686V136h12.686ZM312,120h-8a8,8,0,0,0-8,8v32a7.955,7.955,0,0,0,.936,3.751L280,180.686V98.667l16-21.333,16,21.333ZM288,40V56H200V40ZM128,96v24H96V96ZM64,200h80V184H64V152.867A16.885,16.885,0,0,1,80.867,136h62.266A16.885,16.885,0,0,1,160,152.867V216H64ZM32,248a16.019,16.019,0,0,1,16-16H229.878a30.66,30.66,0,0,0,0,32H48A16.019,16.019,0,0,1,32,248ZM421.03,446.692A29.685,29.685,0,0,1,391.531,472H120.469a29.685,29.685,0,0,1-29.5-25.307L65.325,280h381.35ZM464,264H283.314l32-32H464a16,16,0,0,1,0,32Z"/>
+                                </svg>
+                                <span class="navbar-text d-block">Grocery</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="mx-auto">
+                                <!-- Theme switch toggle adapted from Matt Smith's Codepen -->
+                                <label class="theme-switch" for="checkbox">
+                                    <input type="checkbox" id="checkbox"/>
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="icon-text d-block">Dark Mode</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="flex-grow-1">
+            <img
+                src="assets/img/grocery_banner.jpeg"
+                class="w-100 h-25"
+                alt="grocery neon sign"/>
+            <section>
+                <div class="section-card-wrapper grocery">
+                    <p class="w-75 text-center mx-auto">
+                        <small class="text-muted">This grocery list is generated based on your selected
+                            meal plan. You can check an item to mark it as completed while shopping, click
+                            on the quantity to modify it, or delete it if it's unnecessary</small>
+                    </p>
+                    <div class="row g-0 align-items-start mb-2">
+                        <div class="offset-2 col-5">
+                            <h5>Items</h5>
+                        </div>
+                        <div class="col-4">
+                            <h5>Quantity</h5>
+                        </div>
+                    </div>
+                    <div id="grocery-list-data"></div>
+                    <div class="text-center mt-4">
+                        <button class="btn btn-reset" type="reset">Reset list</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="row g-0 text-center">
+                <div class="col-4">
+                    <img
+                        src="assets/img/favicon.png"
+                        alt="Zoro Recipe & Meal logo"
+                        height="60"
+                        width="60"/>
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center">
+                    <div class="d-inline-block text-center me-md-3">
+                        <span class="d-block icon-text">Created By</span>
+                        <span class="footer-sponsor">Team ZORO</span >
+                    </div>
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center">
+                    <ul class="list-inline social-links my-auto">
+                        <li class="list-inline-item me-0">
+                            <a href="http://www.facebook.com" target="_blank" rel="noopener">
+                                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item me-0">
+                            <a href="http://www.twitter.com" target="_blank" rel="noopener">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </li>
+                        <li class="d-block d-sm-none"></li>
+                        <li class="list-inline-item me-0">
+                            <a href="http://www.instagram.com" target="_blank" rel="noopener">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item me-0">
+                            <a href="http://www.youtube.com" target="_blank" rel="noopener">
+                                <i class="fab fa-youtube" aria-hidden="true"></i>
+                                <span class="sr-only">Youtube</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="returning-user-modal"></div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+        <script src="assets/js/session.js"></script>
+        <script src="assets/js/theme_changer.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/grocery.js"></script>
+        <script
+            src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    </body>
+</html>
